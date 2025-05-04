@@ -49,7 +49,7 @@ def main():
                 sys.exit()
             for bullet in bullets:
                 if sprites.is_colliding(bullet):
-                    sprites.kill()
+                    sprites.split()
                     bullet.kill()
 
         pygame.display.flip()
